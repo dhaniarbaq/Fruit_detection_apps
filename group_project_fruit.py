@@ -115,20 +115,20 @@ def get_fruit_info(label):
         return "Unknown", 0, "Cannot classify"
         
     if 'Banana' in label:
-        if 'Yellow' in label:          return "Banana", 2, "Ripe (Yellow)"
-        if 'Green' in label:      return "Banana", 3, "Unripe"
-        if 'Rotten' in label:          return "Banana", 3, "Overripe/Rotten (Brown)"
-        return "Banana", 1, "Unripe (Green)"
+        if 'Yellow' in label:          return "Banana", 2, "YellowBanana_1"
+        if 'Green' in label:      return "Banana", 3, "GreenBanana_2"
+        if 'Rotten' in label:          return "Banana", 3, "RottenBanana_3"
+        return "Banana", 1, "GreenBanana_2"
     
     if 'Apple' in label:
-        if 'Red' in label:             return "Apple", 2, "Ripe (Red)"
-        if 'Rotten' in label:          return "Apple", 3, "Rotten"
-        return "Apple", 1, "Unripe (Green)"
+        if 'Red' in label:             return "Apple", 2, "RedApple_2"
+        if 'Rotten' in label:          return "Apple", 3, "RottenApple_3"
+        return "Apple", 1, "GreenApple_1"
     
     if 'Orange' in label:
-        if 'OrangeOrange' in label:    return "Orange", 2, "Ripe (Orange)"
-        if 'Rotten' in label:          return "Orange", 3, "Rotten"
-        return "Orange", 1, "Unripe (Green)"
+        if 'OrangeOrange' in label:    return "Orange", 2, "FreshOrange_2"
+        if 'Rotten' in label:          return "Orange", 3, "RottenOrange_3"
+        return "Orange", 1, "GreenOrange_1"
     
     return "Unknown", 0, "Cannot classify"
 
